@@ -21,6 +21,12 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 380px);
+            column-gap: 60px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -42,7 +48,13 @@
             &-item {
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
-            }
+            }   
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 585px;
+            row-gap: 20px;
         }
     }
 }
@@ -76,6 +88,14 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            padding: 0;
         }
     }
 }
@@ -114,6 +134,14 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            padding: 0;
         }
     }
 }
