@@ -129,7 +129,8 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <img srcset="img/main_photo-min.jpg 300w, img/main_photo.jpg 400w"
+                        sizes="(max-width: 576px) 280px, (min-width: 577px) 400px" src="img/main_photo.jpg" alt="photo">
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">About me</h2>
@@ -212,9 +213,9 @@
                                         Medicine</h4>
                                     <div class="resume__item-location">Magister | Kyiv (2014-2019)</div>
                                 </div>
-                                <div class="resume__item-body"">Educational and Scientific Center " Institute of Biology
+                                <div class="resume__item-body">Educational and Scientific Center " Institute of Biology
                                     and Medicine" of Taras Shevchenko National University of Kyiv </div>
-                                </div>
+                            </div>
                         </li>
                         <li>
                             <div class=" resume__item">
@@ -226,9 +227,11 @@
                                     <div class="resume__item-location">Web development courses</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    The Complete Course JavaScript + React - from scratch to result<br>
-                                    Practical JavaScript (Advanced)<br>
-                                    WEB-developer 2022
+                                    <p>
+                                        The Complete Course JavaScript + React - from scratch to result
+                                    </p>
+                                    <p>Practical JavaScript (Advanced)</p>
+                                    <p>WEB-developer 2022</p>
                                 </div>
                             </div>
                         </li>
@@ -355,10 +358,10 @@
                     <img src="img/works/emploees.png" alt="emploees">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/food.png" alt="food">
+                    <img src="img/works/food.jpg" alt="food">
                 </a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/panel.png" alt="panel">
+                    <img src="img/works/panel.jpg" alt="panel">
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/sneak.png" alt="sneak">
