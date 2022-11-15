@@ -39,6 +39,28 @@
             padding: 0 30px;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-between;
+            row-gap: 35px;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 520px;
+            justify-content: space-around;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -87,6 +109,15 @@
             &-line {
                 width: 100%;
             }
+        }
+    }
+    .contacts {
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+        &__btn {
+            padding: 8px 25px;
+            line-height: 16px;
         }
     }
 }
@@ -147,7 +178,26 @@
             }
         }
     }
+    .portfolio {
+        &__wrapper {
+            .horizontal {
+                grid-row: unset;
+                grid-column: unset;
+            }
+            justify-content: center;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 260px);
+        }
+    }
 }
+
 
 @media (max-width: 576px) {
     .container {
@@ -173,7 +223,6 @@
         }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
         &__btns {
             margin-top: 30px;
         }
@@ -197,6 +246,32 @@
         }
         &__ratings {
             grid-template-columns: repeat(auto-fit,300px);
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }

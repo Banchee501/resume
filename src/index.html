@@ -347,7 +347,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Portfolio</h2>
             <div class="title title_fz36 title__section-subtitle">My projects</div>
@@ -367,13 +367,17 @@
                     <img src="img/works/sneak.png" alt="sneak">
                 </a>
                 <a href="#" class="portfolio__item horizontal">
-                    <img src="img/works/marvel.png" alt="marvel">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/works/marvel-min.png">
+                        <source media="(min-width: 768px)" srcset="img/works/marvel.png">
+                        <img src="img/works/marvel.png" alt="marvel">
+                    </picture>
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -423,7 +427,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>
